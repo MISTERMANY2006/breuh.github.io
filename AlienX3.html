@@ -55,27 +55,12 @@
 <button id="musicButton" onclick="toggleMusic()">Reproducir Música</button>
 
 <!-- Botón para ir a la siguiente página -->
-<button id="nextPageButton" onclick="location.href='Juegos.html'">Actividades</button>
+<button id="nextPageButton" onclick="location.href='idex.html'">Actividades</button>
 
 <!-- Elemento de audio -->
 <audio id="myAudio">
   <source src="EchoClone1.mp3" type="audio/mpeg">
   Tu navegador no soporta audio HTML5.
 </audio>
-
-<script>
-var audio = document.getElementById("myAudio");
-var musicButton = document.getElementById("musicButton");
-
-function toggleMusic() {
-  if (audio.paused) {
-    audio.play();
-    musicButton.textContent = "Detener Música";
-  } else {
-    audio.pause();
-    musicButton.textContent = "Reproducir Música";
-  }
-}
-</script>
 </body>
 </html>
